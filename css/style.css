@@ -1,14 +1,4 @@
-/**
-  
-* Template Name: Runaway - Personal Portfolio HTML Template
-* Version: 2.1.1
-* Author: themetrading
-* Email: themetrading@gmail.com
-* Developed By: themetrading
-* First Release: 08 February 2019
-* Author URL: www.themetrading.com
 
-**/
 
 /*===================================================================================
 Table of CSS Content arrage with every section name
@@ -49,7 +39,7 @@ Table of CSS Content arrage with every section name
 	Typography links 
  	Import Google Fonts
 =====================================================================================*/
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i,800,800i|Poppins:400,400i,600,600i,700,700i,800,800i");
+
 
 /*===================================================================================
 01.		Default Css
@@ -390,7 +380,7 @@ a:hover,a:focus,a.active{
     background: url(../images/background/01.jpg) no-repeat center fixed;
 }
 .background3{
-  background-image: url(../images/slider/04.jpg);
+  background-image: url(../images/slider/04.png);
 }
 .background4{
   background-image: url(../images/slider/05.jpg);
@@ -436,13 +426,197 @@ header{
 	letter-spacing: 2px;
 	font-family: 'Poppins', sans-serif;
 }
+
+/*========================================
+08. Nav Menu Css - UPDATED
+=========================================*/
+
+.navbar{
+	padding: 0;
+	display: flex;
+	align-items: center;
+	min-height: 70px;
+}
+
+.box-layout .main_nav{
+	width: 1280px;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+header{
+	z-index: 999;
+}
+
+.navbar-brand{
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	font-family: 'Poppins', sans-serif;
+}
+
+/* ===== LOGO FIX ===== */
+.nav-logo{
+	width: 220px;
+	height: auto;
+	object-fit: contain;
+	display: block;
+}
+
+/* ===== MAIN NAV ===== */
 .main_nav{
-	  width: 100%;
-    right: 0;
-    left: 0;
-    position: absolute;
-    padding: 15px 0;
-    min-height: 72px;
+	width: 100%;
+	right: 0;
+	left: 0;
+	position: absolute;
+	padding: 10px 0;
+	z-index: 999;
+	transition: all 0.3s ease;
+}
+
+/* ===== STICKY NAV ===== */
+.nav-scroll{
+	left: 0;
+	padding: 8px 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	transform: translateY(0);
+	transition: all 0.4s ease;
+}
+
+/* ===== NAV LINKS ===== */
+.navbar-light .navbar-nav .nav-link{
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	line-height: normal;
+	padding: 10px 0;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.navbar .navbar-nav .nav-item{
+	padding: 0 15px;
+}
+
+.navbar-nav{
+	align-items: center;
+}
+
+.navbar-nav .nav-item .nav-link{
+	position: relative;
+	padding: 0;
+}
+
+.navbar-nav .nav-item .nav-link:before{
+	position: absolute;
+	content: "";
+	width: 100%;
+	display: table;
+	height: 2px;
+	left: 0;
+	bottom: -5px;
+	opacity: 0;
+	transition: all 300ms linear;
+	transform: scaleX(0);
+}
+
+.navbar-nav .nav-item .nav-link.active:before{
+	opacity: 1;
+	transform: scaleX(1);
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 991px){
+
+	.main_nav{
+		background-color: rgba(0,0,0,0.9);
+		padding: 8px 0;
+	}
+
+	.nav-logo{
+		width: 170px;
+	}
+
+	.navbar{
+		min-height: 65px;
+	}
+
+	.navbar-toggler{
+		border: none;
+		outline: none;
+		box-shadow: none;
+	}
+
+/* ===== MOBILE NAV ALIGNMENT ===== */
+
+.navbar-collapse{
+    background: #8a8a8a;
+    padding: 15px 25px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.navbar-nav{
+    width: 100%;
+    align-items: flex-start !important;
+}
+
+.navbar .navbar-nav .nav-item{
+    width: 100%;
+    padding: 0;
+    margin-bottom: 12px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    display: inline-block;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 8px 0;
+    text-align: left;
+}
+
+/* Active line effect */
+.navbar-nav .nav-item .nav-link.active{
+    position: relative;
+}
+
+.navbar-nav .nav-item .nav-link.active:before{
+    opacity: 1;
+    transform: scaleX(1);
+    bottom: -3px;
+}
+
+	.navbar .navbar-nav .nav-item{
+		padding: 10px 0;
+	}
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 576px){
+
+	.nav-logo{
+		width: 140px;
+	}
+
+	.main_nav{
+		padding: 5px 0;
+	}
+
+	.navbar{
+		min-height: 60px;
+	}
+
+	.navbar-light .navbar-nav .nav-link{
+		font-size: 13px;
+	}
 }
 .nav-scroll{
     left: 0;

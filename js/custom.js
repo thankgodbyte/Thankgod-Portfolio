@@ -116,65 +116,10 @@
       
      });
 
-//=====================================================================================
-//  05.   Team Slider
-//=====================================================================================
 
-  $('.team_member').owlCarousel({
-   loop: true,
-   autoplay: false,
-   autoplayTimeout: 5000,
-   margin: 30,
-   nav: true,
-   dots: false,
-   navText: ['<span class="fa fa-angle-left"></span>','<span class="fa fa-angle-right"></span>'],
-   responsive:{
-
-      0:{
-        items:1
-      },
-      600:{
-        items:1
-      },
-      1024:{
-        items:3
-      },
-      1200:{
-        items:3
-      }
-    }
-    
-   });
 
 //=====================================================================================
-//  06.   Testimonial Slider
-//=====================================================================================
 
-    $('.testimonial_item').owlCarousel({
-     loop: true,
-     autoplay: true,
-     autoplayTimeout: 5000,
-     margin: 0,
-     nav: true,
-     dots: false,
-     navText: ['<span class="fa fa-angle-left"></span>','<span class="fa fa-angle-right"></span>'],
-     responsive:{
-
-        0:{
-          items:1
-        },
-        600:{
-          items:1
-        },
-        1024:{
-          items:2
-        },
-        1200:{
-          items:2
-        }
-      }
-      
-     });
 
 //=====================================================================================
 // 07.    Fact Counter
@@ -291,30 +236,7 @@ if($contact.length){
                 message: "Please write your Message" //Write here your error message that you want to show in contact form
             },
 
-            submitHandler: function (form) {
-                $('#send').attr({'disabled' : 'true', 'value' : 'Sending...' });
-                $.ajax({
-                    type: "POST",
-                    url: "email.php",
-                    data: $(form).serialize(),
-                    success: function () {
-                        $('#send').removeAttr('disabled').attr('value', 'Send');
-                        $( "#success").slideDown( "slow" );
-                        setTimeout(function() {
-                        $( "#success").slideUp( "slow" );
-                        }, 5000);
-                        form.reset();
-                    },
-                    error: function() {
-                        $('#send').removeAttr('disabled').attr('value', 'Send');
-                        $( "#error").slideDown( "slow" );
-                        setTimeout(function() {
-                        $( "#error").slideUp( "slow" );
-                        }, 5000);
-                    }
-                });
-                return false; // required to block normal submit since you used ajax
-            }
+          
 
     });
   }
