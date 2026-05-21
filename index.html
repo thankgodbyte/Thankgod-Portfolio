@@ -1,753 +1,589 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- index-754:31-->
 <head>
-	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-	<!--===== Meta Tag =====-->
+	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser/dist/email.min.js"></script>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="description" content="Runaway - Personal Portfolio HTML Template">
+	<meta name="description" content="ThankGod Anigbo - Frontend Developer Portfolio">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="business, agency, blog, cv, creative, html, one page, personal, portfolio, resume, responsive, bootstrap, photography, designer, developer">
-	<meta name="author" content="root">
+	<meta name="author" content="ThankGod Anigbo">
 
-	 <!--	Css Links
-    ==================================================-->
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/font-awesome.min.css">
-     <link rel="stylesheet" href="fonts/flaticon.css">
-     <link rel="stylesheet" href="css/plugins.css">
-     <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="css/color.css" id="color-change">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+	<link rel="stylesheet" href="css/plugins.css">
+	<link rel="stylesheet" href="css/style.css">
 
-
-     <!-- Favicon 
-    ==================================================-->
 	<link rel="icon" type="image/png" sizes="32x32" href="images/logo/logo1.png">
-
-      <!--	Title
-    ==================================================-->
-	<title>ThankGod portfolio</title>
-
+	<title>ThankGod Portfolio</title>
 </head>
 
 <body id="top" class="page-load">
-	<!--	Start Back to top
-	=================================================-->
-	<a href="#" id="scroll" style="display: none;"><span></span></a>
-	<!--	End Back to top
-	==================================================-->
 
-	<!--	Preloader
-	==================================================-->
-	<div class="preloader">
-		<div class="lds-css ng-scope">
-			<div class="lds-spinner" style="100%;height:100%">
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
+	<!-- Back to top -->
+	<a href="#top" id="scroll-top"><i class="fa fa-arrow-up"></i></a>
+
+	<!-- Loader -->
+	<div id="loader">
+		<div class="loader-content">
+			<div class="loader-ring"></div>
+			<p class="loader-text">ThankGod<span>.</span></p>
 		</div>
 	</div>
 
+	<!-- Wrapper -->
+	<div id="page_wrapper">
 
-<!-- Wrapper Start 
-==================================================-->
-<div id="page_wrapper">
-	<div class="row">
-	<!-- Start Nav Menu 
-	==============================================-->
-	<header class="main_nav">
-		<div class="container">
-			<nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light w-100"> 
-				<a class="navbar-brand" href="#top"><img class="nav-logo" src="images/logo/logo4.png" alt="logo"></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav ml-auto">
-					  <li class="nav-item"><a class="nav-link active" href="#top" data-scroll="top">Home<span class="sr-only">(current)</span></a></li>
-					  <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-					  <li class="nav-item"><a class="nav-link" href="#skill">Skill</a></li>
-					  <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-					  <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>		
-					  <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>	
-					</ul>
-				</div>		
-			</nav>
-		</div>	
-	</header>
-	<!-- End Nav Menu
-	==================================================-->
-	
-	<!--	Start Main Banner 
-	==================================================-->
-	<section id="main_banner" class=" banner_water_effect background3 overlay_one">
-		<div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-md-12 col-lg-12 home-content text-left">
-                    <div class="mainbanner_content">
-                        <span class="pb_5 banner_title color_white">I Am ThankGod Anigbo</span>  
-                        <h1 class="cd-headline clip is-full-width text-uppercase">
-                            <span class="color_white">I am a</span>
-                            <span class="cd-words-wrapper color_default">
-                                <b class="is-visible"> web developer.</b>
-                                <b>Developer.</b>
-                                <b>Freelancer.</b>
-                            </span>
-                        </h1>
-                        <p>I build modern web applications using React and clean UI systems.</p>
-                        <a class="btn btn-default" href="index1.html">Download CV</a>
-						
-                    </div>
-                </div>          
-            </div>
-        </div>
-    </section>
-	<!--	End Main Banner 
-	==================================================-->
-	<!--	Start About
-	===================================================-->
-	<section id="about" class="py_80 full_row bg_white">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-lg-12">
-					<div class="section_title_1 text-center mx-auto pb_60 wow animated slideInUp">
-	                    <h2 class="title text-uppercase">
-  <span class="line_double mx-auto color_default">About</span>Who I Am</h2>
-	                    <p>I’m ThankGod, a passionate Frontend Developer focused on building modern, responsive, and user-friendly web applications. I enjoy turning ideas into clean and functional interfaces using technologies like React and modern UI frameworks.</p>
+		<!-- NAVBAR -->
+		<header class="main_nav">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-dark w-100">
+					<a class="navbar-brand" href="#top">
+						<img class="nav-logo" src="images/logo/logo4.png" alt="Logo">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarNav" aria-controls="navbarNav"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item"><a class="nav-link active" href="#top">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="#skill">Skill</a></li>
+							<li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+							<li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+							<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
 
+		<!-- HERO -->
+		<section id="main_banner">
+			<!-- Animated background blobs -->
+			<div class="hero-blobs">
+				<div class="blob blob-1"></div>
+				<div class="blob blob-2"></div>
+				<div class="blob blob-3"></div>
+			</div>
+			<!-- Particle dots -->
+			<div class="hero-particles" id="heroParticles"></div>
+
+			<div class="container h-100">
+				<div class="row h-100 align-items-center">
+					<div class="col-lg-8 col-12">
+						<div class="mainbanner_content">
+							<!-- Animated badge -->
+							<div class="hero-badge" data-anim="fade-up" data-delay="0">
+								<span class="badge-dot"></span> Available for freelance work
+							</div>
+
+							<!-- Name -->
+							<h2 class="hero-name" data-anim="fade-up" data-delay="100">
+								I Am <span class="hero-name-accent">ThankGod Anigbo</span>
+							</h2>
+
+							<!-- Typewriter headline — NO plugin dependency -->
+							<h1 class="hero-headline" data-anim="fade-up" data-delay="200">
+								I Am A <br>
+								<span class="typewriter-wrap">
+									<span class="typewriter" id="typewriter"></span>
+									<span class="typewriter-cursor">|</span>
+								</span>
+							</h1>
+
+							<!-- Sub text -->
+							<p class="hero-sub" data-anim="fade-up" data-delay="300">
+								I build fast, modern web applications using <strong>React</strong> and clean UI systems — from concept to production.
+							</p>
+
+							<!-- CTA buttons -->
+							<div class="hero-btns" data-anim="fade-up" data-delay="400">
+								<a class="btn btn-primary-hero" href="#portfolio">View My Work</a>
+								<a class="btn btn-outline-hero" href="index1.html">Download CV</a>
+							</div>
+
+							<!-- Quick stats -->
+							<div class="hero-stats" data-anim="fade-up" data-delay="500">
+								<div class="stat">
+									<span class="stat-num">2+</span>
+									<span class="stat-label">Years Exp.</span>
+								</div>
+								<div class="stat-divider"></div>
+								<div class="stat">
+									<span class="stat-num">70+</span>
+									<span class="stat-label">Projects</span>
+								</div>
+								<div class="stat-divider"></div>
+								<div class="stat">
+									<span class="stat-num">50+</span>
+									<span class="stat-label">Clients</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Hero image col -->
+					<div class="col-lg-4 d-none d-lg-flex justify-content-center align-items-center">
+						<div class="hero-img-wrap" data-anim="fade-left" data-delay="300">
+							<div class="hero-img-ring"></div>
+							<img src="images/about/03.png" alt="ThankGod Anigbo" class="hero-img">
+							<!-- floating chips -->
+							<div class="hero-chip chip-react">
+								<i class="fa fa-code"></i> React Dev
+							</div>
+							<div class="hero-chip chip-open">
+								<span class="chip-green-dot"></span> Open to work
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="about_one">
+
+			<!-- Scroll indicator -->
+			<a href="#about" class="scroll-down-indicator">
+				<span></span>
+			</a>
+		</section>
+
+		<!-- ABOUT -->
+		<section id="about" class="py_80 full_row bg_white">
+			<div class="container">
 				<div class="row">
-					<div class="col-md-7 col-lg-7">
-						<div class="myself color_secondery wow animated fadeInLeft">
-							<p>I’m currently working on real-world projects like a job portal platform where users can browse jobs, manage profiles, and track applications. I’m always learning, improving my skills, and aiming to build products that solve real problems.</p>
-						</div>
-						<div class="personal_info">
-							<div class="row">
-								<div class="col-md-12 col-lg-6">
-									<ul>
-										<li><span class="color_secondery">Name :</span> ThankGod</li>
-										<li><span class="color_secondery">Email :</span> thankgodanigbo55@gmail.com</li>
-										<li><span class="color_secondery">Phone :</span> +234 707 640 8137</li>	
-									</ul>
-								</div>
-	
-							</div>
+					<div class="col-12">
+						<div class="section_title_1 text-center mx-auto pb_60 wow animated slideInUp">
+							<h2 class="title text-uppercase">
+								<span class="line_double color_default">About</span><br>Who I Am
+							</h2>
+							<p>I'm ThankGod, a passionate Frontend Developer focused on building modern, responsive, and user-friendly web applications.</p>
 						</div>
 					</div>
-					<div class="col-md-5 col-lg-5">
-						<div class="profile_img personal_video wow animated fadeInRight">
-							<img src="images/about/03.png" alt="image">
-							<div class="loader">
-								<div class="loader-inner ball-scale-multiple">
-									<div></div>
-									<div></div>
-									<div></div>
-								</div>
+				</div>
+				<div class="about_one">
+					<div class="row align-items-center">
+						<div class="col-md-7 wow animated fadeInLeft">
+							<div class="myself">
+								<p>I'm currently working on real-world projects like a job portal platform where users can browse jobs, manage profiles, and track applications. I'm always learning, improving my skills, and aiming to build products that solve real problems.</p>
+							</div>
+							<div class="personal_info">
+								<ul>
+									<li><span>Name :</span> ThankGod Anigbo</li>
+									<li><span>Email :</span> thankgodanigbo55@gmail.com</li>
+									<li><span>Phone :</span> +234 707 640 8137</li>
+									<li><span>Location :</span> Nigeria &mdash; Available for remote work</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-5 wow animated fadeInRight mt-4 mt-md-0">
+							<div class="profile_img">
+								<img src="images/about/03.png" alt="ThankGod Anigbo">
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	<!--	End About
-	===================================================-->
-	<!--	Start Skill
-	===================================================-->
-	<section id="skill" class="py_80 bg_secondery full_row">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 col-lg-12">
-				<div class="section_title_1 text-center mx-auto pb_60 wow animated slideInUp">
-                    <h2 class="title text-uppercase">
-						<span class="line_double mx-auto color_default">skills</span>
-						My Expertise
-					</h2>
-	                    <span class="sub_title">
-						I focus on building modern, responsive, and user-friendly web applications 
-						with clean design and smooth user experience.
-					</span>
-	                </div>
-				</div>
-			</div>
-					<div class="my_skill">
-			<div class="row">
-				<div class="col-md-12 col-lg-6">
-					<div class="about_myskill color_secondery wow animated slideInLeft">
-						<h2 class="color_primary">
-							Front-End Developer passionate about clean UI & performance
-						</h2>
-						<p class="pt_15">
-							I specialize in building responsive and interactive web applications 
-							using modern technologies like React and Chakra UI. I enjoy turning 
-							ideas into real-world products that users can interact with بسهولة.
-						</p>
-						<p class="pt_15">
-							Currently, I’m working on a job portal project called <strong>HireNova</strong>, 
-							where users can explore job opportunities, manage profiles, and track applications. 
-							My goal is to create scalable, fast, and visually appealing applications.
-						</p>
+		</section>
+
+		<!-- SKILLS -->
+		<section id="skill" class="py_80 bg_secondery full_row">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="section_title_1 text-center mx-auto pb_60 wow animated slideInUp">
+							<h2 class="title text-uppercase">
+								<span class="line_double color_default">Skills</span><br>My Expertise
+							</h2>
+							<span class="sub_title">I focus on building modern, responsive, and user-friendly web applications with clean design and smooth user experience.</span>
+						</div>
 					</div>
 				</div>
+				<div class="row align-items-center">
+					<div class="col-lg-6 wow animated fadeInLeft">
+						<div class="about_myskill">
+							<h2>Front-End Developer passionate about clean UI &amp; performance</h2>
+							<p class="pt_15">I specialize in building responsive and interactive web applications using modern technologies like React and Chakra UI.</p>
+							<p class="pt_15">Currently working on <strong class="color_default">HireNova</strong> — a job portal where users can explore opportunities, manage profiles, and track applications.</p>
+						</div>
 					</div>
-					<div class="col-md-12 col-lg-6">
-						<div class="skill-progress wow animated slideInRight">
-		                    <div class="prgs-bar fact-counter"> <span>HTML</span>
-		                        <div class="progress count wow" data-wow-duration="0ms">
-		                            <div class="skill-percent"><span class="count-num" data-speed="3000" data-stop="90">0</span>%</div>
-		                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemax="100"> </div>
-								</div>
+					<div class="col-lg-6 mt-4 mt-lg-0 wow animated fadeInRight">
+						<div class="skill-progress">
+							<div class="prgs-bar">
+								<div class="skill-label"><span>HTML</span><span>90%</span></div>
+								<div class="progress"><div class="progress-bar" style="width:90%"></div></div>
 							</div>
-		                    <div class="prgs-bar fact-counter"> <span>CSS</span>
-		                        <div class="progress count wow" data-wow-duration="0ms">
-		                            <div class="skill-percent"><span class="count-num" data-speed="3000" data-stop="95">0</span>%</div>
-		                            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemax="100"> </div>
-								</div>
+							<div class="prgs-bar">
+								<div class="skill-label"><span>CSS</span><span>95%</span></div>
+								<div class="progress"><div class="progress-bar" style="width:95%"></div></div>
 							</div>
-		                    <div class="prgs-bar fact-counter"> <span>Javascript</span>
-		                        <div class="progress count wow" data-wow-duration="0ms">
-		                            <div class="skill-percent"><span class="count-num" data-speed="3000" data-stop="85">0</span>%</div>
-		                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemax="100"> </div>
-								</div>
+							<div class="prgs-bar">
+								<div class="skill-label"><span>JavaScript</span><span>85%</span></div>
+								<div class="progress"><div class="progress-bar" style="width:85%"></div></div>
 							</div>
-		                    <div class="prgs-bar fact-counter"> <span>PHP</span>
-		                        <div class="progress count wow" data-wow-duration="0ms">
-		                            <div class="skill-percent"><span class="count-num" data-speed="3000" data-stop="90">0</span>%</div>
-		                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemax="100"> </div>
-								</div>
+							<div class="prgs-bar">
+								<div class="skill-label"><span>PHP</span><span>90%</span></div>
+								<div class="progress"><div class="progress-bar" style="width:90%"></div></div>
 							</div>
-		                    <div class="prgs-bar fact-counter"> <span>react</span>
-		                        <div class="progress count wow" data-wow-duration="0ms">
-		                            <div class="skill-percent"><span class="count-num" data-speed="3000" data-stop="90">0</span>%</div>
-		                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemax="100"> </div>
-								</div>
+							<div class="prgs-bar">
+								<div class="skill-label"><span>React</span><span>90%</span></div>
+								<div class="progress"><div class="progress-bar" style="width:90%"></div></div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	<!--	End Skill
-	===================================================-->
-	<!--	Start Experience and Projects
-	===================================================-->
-	<div class="experience background2 overlay_two py_60 full_row">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-lg-12">
-					<div class="fact-counter">
-						<div class="row">
-							<div class="col-md-4 col-lg-4">
-							    <div class="counter count wow text-center" data-wow-duration="300ms">
-							    	<span class="flaticon-man-working-on-a-laptop-from-side-view"></span>
-					            	<div class="counting_digit color_default mt_15"> <h2 class="count-num" data-speed="3000" data-stop="2">0</h2><span>+</span>
-					            	</div>
-					            	<h3 class="color_white mt_15">Years of Experience</h3>
-					          	</div>
-							</div>
-							<div class="col-md-4 col-lg-4">
-							    <div class="counter count wow text-center" data-wow-duration="300ms">
-							    	<span class="flaticon-half-time-work"></span>
-					            	<div class="counting_digit color_default mt_15"> <h2 class="count-num" data-speed="3000" data-stop="70">0</h2><span>+</span>
-					            	</div>
-					            	<h3 class="color_white mt_15">Porjects Done</h3>
-					          	</div>
-							</div>
-							<div class="col-md-4 col-lg-4">
-							    <div class="counter count wow text-center" data-wow-duration="300ms">
-							    	<span class="flaticon-happy"></span>
-					            	<div class="counting_digit color_default mt_15"><h2 class="count-num" data-speed="3000" data-stop="50">0</h2><span>+</span>
-					            	</div>
-					            	<h3 class="color_white mt_15">Happy Clients</h3>
-					          	</div>
-							</div>
+		</section>
+
+		<!-- SERVICES -->
+		<section id="services" class="py_80 full_row bg_white">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="section_title_1 text-center mx-auto pb_60 wow animated slideInUp">
+							<h2 class="title text-uppercase">
+								<span class="line_double color_default">Services</span><br>What I Do
+							</h2>
+							<span class="sub_title">I help businesses and individuals build modern, fast, and user-friendly web applications.</span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-lg-4 mb_30">
+						<div class="service_two text-center wow animated slideInUp">
+							<div class="srv_item_number"><strong>01.</strong></div>
+							<h3 class="p_20 text-uppercase">Responsive Web Design</h3>
+							<div class="srv_icon"><span class="flaticon-website-design-symbol"></span></div>
+							<p>Clean, modern UI that works perfectly across mobile, tablet, and desktop.</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 mb_30">
+						<div class="service_two text-center wow animated slideInUp">
+							<div class="srv_item_number"><strong>02.</strong></div>
+							<h3 class="p_20 text-uppercase">Frontend Development</h3>
+							<div class="srv_icon"><span class="flaticon-programming"></span></div>
+							<p>Fast, scalable apps using React, JavaScript, and Chakra UI.</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 mb_30">
+						<div class="service_two text-center wow animated slideInUp">
+							<div class="srv_item_number"><strong>03.</strong></div>
+							<h3 class="p_20 text-uppercase">UI Implementation</h3>
+							<div class="srv_icon"><span class="flaticon-editor"></span></div>
+							<p>Convert Figma designs into pixel-perfect, fully functional interfaces.</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 mb_30">
+						<div class="service_two text-center wow animated slideInUp">
+							<div class="srv_item_number"><strong>04.</strong></div>
+							<h3 class="p_20 text-uppercase">API Integration</h3>
+							<div class="srv_icon"><span class="flaticon-internet"></span></div>
+							<p>Connect frontends to backends and APIs for real-time dynamic features.</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 mb_30">
+						<div class="service_two text-center wow animated slideInUp">
+							<div class="srv_item_number"><strong>05.</strong></div>
+							<h3 class="p_20 text-uppercase">Performance Optimization</h3>
+							<div class="srv_icon"><span class="flaticon-speed"></span></div>
+							<p>Improve speed, performance and UX by optimizing code and load times.</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 mb_30">
+						<div class="service_two text-center wow animated slideInUp">
+							<div class="srv_item_number"><strong>06.</strong></div>
+							<h3 class="p_20 text-uppercase">Project Development</h3>
+							<div class="srv_icon"><span class="flaticon-shopping-cart"></span></div>
+							<p>Build complete products like job portals, dashboards, and business sites.</p>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<!--	End Experience and Projects
-	===================================================-->
-	<!--	Start Services
-	===================================================-->
-<section id="services" class="py_80 full_row bg_white">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 col-lg-12">
-				<div class="section_title_1 text-center mx-auto pb_60 wow animated slideInUp">
-                    <h2 class="title text-uppercase">
-						<span class="line_double mx-auto color_default">services</span>
-						What I Do
-					</h2>
-                    <span class="sub_title">
-						I help businesses and individuals build modern, fast, and user-friendly web applications.
-					</span>
-                </div>
-			</div>
+		</section>
 
-			<div class="services_item1">
-				<div class="col-md-12 col-lg-12">
-					<div class="row">
-
-						<div class="col-md-6 col-lg-4">
-							<div class="service_two text-center pt_15 mb_30 wow animated slideInUp">
-								<div class="srv_item_number color_lightgray"><strong>01.</strong></div>
-								<h3 class="p_20 text-uppercase color_primary">Responsive Web Design</h3>
-								<div class="srv_icon color_white"><span class="flaticon-website-design-symbol"></span></div>
-								<p>
-									I design clean and modern user interfaces that work perfectly across 
-									mobile, tablet, and desktop devices.
-								</p>
-							</div>
+		<!-- PORTFOLIO -->
+		<section id="portfolio" class="py_80 bg_secondery full_row">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="section_title_1 text-center mx-auto pb_60 wow animated slideInUp">
+							<h2 class="title text-uppercase">
+								<span class="line_double color_default">Portfolio</span><br>My Projects
+							</h2>
+							<span class="sub_title">Showcasing skills in frontend development, UI design, and real-world applications.</span>
 						</div>
-
-						<div class="col-md-6 col-lg-4">
-							<div class="service_two text-center pt_15 mb_30 wow animated slideInUp">
-								<div class="srv_item_number color_lightgray"><strong>02.</strong></div>
-								<h3 class="p_20 text-uppercase color_primary">Frontend Development</h3>
-								<div class="srv_icon color_white"><span class="flaticon-programming"></span></div>
-								<p>
-									I build fast and scalable web applications using React, JavaScript, 
-									and modern UI frameworks like Chakra UI.
-								</p>
-							</div>
+					</div>
+				</div>
+				<div class="col-12 mb_30">
+					<div class="filters text-center">
+						<ul class="filter-tabs">
+							<li class="active filter" data-filter="all">All</li>
+							<li class="filter" data-filter=".react">React Apps</li>
+							<li class="filter" data-filter=".ui">UI Projects</li>
+							<li class="filter" data-filter=".fullstack">Full Projects</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row portfolio-grid">
+					<div class="column mix react fullstack mb_30 col-md-4 col-sm-6 col-12">
+						<div class="default-portfolio-item">
+							<a href="images/porfolio/project1.jpg" data-fancybox="gallery">
+								<img src="images/porfolio/project1.jpg" alt="HireNova Job Portal">
+								<div class="overlay-box">
+									<i class="fa fa-eye"></i>
+									<div class="tag"><p>HireNova Job Portal</p><small>React • API • UI</small></div>
+								</div>
+							</a>
 						</div>
-
-						<div class="col-md-6 col-lg-4">
-							<div class="service_two text-center pt_15 mb_30 wow animated slideInUp">
-								<div class="srv_item_number color_lightgray"><strong>03.</strong></div>
-								<h3 class="p_20 text-uppercase color_primary">UI Implementation</h3>
-								<div class="srv_icon color_white"><span class="flaticon-editor"></span></div>
-								<p>
-									I convert Figma or design files into pixel-perfect, fully functional 
-									web interfaces with smooth interactions.
-								</p>
-							</div>
+					</div>
+					<div class="column mix react ui mb_30 col-md-4 col-sm-6 col-12">
+						<div class="default-portfolio-item">
+							<a href="images/porfolio/project2.jpg" data-fancybox="gallery">
+								<img src="images/porfolio/project2.jpg" alt="Admin Dashboard">
+								<div class="overlay-box">
+									<i class="fa fa-eye"></i>
+									<div class="tag"><p>Admin Dashboard</p><small>React • Chakra UI</small></div>
+								</div>
+							</a>
 						</div>
-
-						<div class="col-md-6 col-lg-4">
-							<div class="service_two text-center pt_15 mb_30 wow animated slideInUp">
-								<div class="srv_item_number color_lightgray"><strong>04.</strong></div>
-								<h3 class="p_20 text-uppercase color_primary">API Integration</h3>
-								<div class="srv_icon color_white"><span class="flaticon-internet"></span></div>
-								<p>
-									I connect frontend applications to backend services and APIs 
-									to handle real-time data and dynamic features.
-								</p>
-							</div>
+					</div>
+					<div class="column mix ui mb_30 col-md-4 col-sm-6 col-12">
+						<div class="default-portfolio-item">
+							<a href="images/porfolio/project3.jpg" data-fancybox="gallery">
+								<img src="images/porfolio/project3.jpg" alt="Landing Page">
+								<div class="overlay-box">
+									<i class="fa fa-eye"></i>
+									<div class="tag"><p>Modern Landing Page</p><small>Responsive Design</small></div>
+								</div>
+							</a>
 						</div>
-
-						<div class="col-md-6 col-lg-4">
-							<div class="service_two text-center pt_15 mb_30 wow animated slideInUp">
-								<div class="srv_item_number color_lightgray"><strong>05.</strong></div>
-								<h3 class="p_20 text-uppercase color_primary">Performance Optimization</h3>
-								<div class="srv_icon color_white"><span class="flaticon-speed"></span></div>
-								<p>
-									I improve website speed, performance, and user experience 
-									by optimizing code and reducing load times.
-								</p>
-							</div>
+					</div>
+					<div class="column mix fullstack mb_30 col-md-4 col-sm-6 col-12">
+						<div class="default-portfolio-item">
+							<a href="images/porfolio/project4.jpg" data-fancybox="gallery">
+								<img src="images/porfolio/project4.jpg" alt="Job Listing App">
+								<div class="overlay-box">
+									<i class="fa fa-eye"></i>
+									<div class="tag"><p>Job Listing App</p><small>API Integration</small></div>
+								</div>
+							</a>
 						</div>
-
-						<div class="col-md-6 col-lg-4">
-							<div class="service_two text-center pt_15 mb_30 wow animated slideInUp">
-								<div class="srv_item_number color_lightgray"><strong>06.</strong></div>
-								<h3 class="p_20 text-uppercase color_primary">Project Development</h3>
-								<div class="srv_icon color_white"><span class="flaticon-shopping-cart"></span></div>
-								<p>
-									I build complete web projects like job portals (e.g. HireNova), 
-									dashboards, and business websites from scratch.
-								</p>
-							</div>
+					</div>
+					<div class="column mix react ui mb_30 col-md-4 col-sm-6 col-12">
+						<div class="default-portfolio-item">
+							<a href="images/porfolio/project5.jpg" data-fancybox="gallery">
+								<img src="images/porfolio/project5.jpg" alt="User Profile Page">
+								<div class="overlay-box">
+									<i class="fa fa-eye"></i>
+									<div class="tag"><p>User Profile Page</p><small>React UI</small></div>
+								</div>
+							</a>
 						</div>
-
+					</div>
+					<div class="column mix ui mb_30 col-md-4 col-sm-6 col-12">
+						<div class="default-portfolio-item">
+							<a href="images/porfolio/project6.jpg" data-fancybox="gallery">
+								<img src="images/porfolio/project6.jpg" alt="Mobile UI Design">
+								<div class="overlay-box">
+									<i class="fa fa-eye"></i>
+									<div class="tag"><p>Mobile UI Design</p><small>Responsive Layout</small></div>
+								</div>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
+		</section>
 
-		</div>
-	</div>
-</section>
-<!--	End Services
-===================================================-->
-	<!--	Start Portfolio
-	===================================================-->
-<section id="portfolio" class="py_80 bg_secondery full_row">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 col-lg-12">
-				<div class="section_title_1 text-center mx-auto pb_60 wow animated slideInUp">
-                    <h2 class="title text-uppercase">
-						<span class="line_double mx-auto color_default">portfolio</span>
-						My Projects
-					</h2>
-                    <span class="sub_title">
-						Here are some of the projects I’ve worked on, showcasing my skills in 
-						frontend development, UI design, and real-world applications.
-					</span>
-                </div>
-			</div>
-
-			<div class="col-md-12 col-lg-12">
-				<div class="my_portfolio" id="tab-panel"> 
-
-					<!-- Filter -->
-					<div class="row">
-						<div class="col-md-12">
-							<div class="filters mb_30 w-100 text-center">
-								<ul class="filter-tabs mx-auto d-inline-block">
-									<li class="active filter" data-filter="all">All</li>
-									<li class="filter" data-filter=".react">React Apps</li>
-									<li class="filter" data-filter=".ui">UI Projects</li>
-									<li class="filter" data-filter=".fullstack">Full Projects</li>
+		<!-- CONTACT -->
+		<section id="contact" class="py_80 full_row bg_white">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="section_title_1 text-center mx-auto pb_60 wow animated slideInUp">
+							<h2 class="title text-uppercase">
+								<span class="line_double color_default">Contact</span><br>Let's Work Together
+							</h2>
+							<span class="sub_title">Have a project in mind? Send me a message and I'll get back to you.</span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-12 mb-4 mb-md-0 wow animated fadeInLeft">
+						<div class="contact_info">
+							<ul>
+								<li><div class="contact_text"><h6>Email</h6><span>thankgodanigbo55@gmail.com</span></div></li>
+								<li><div class="contact_text"><h6>Phone</h6><span>+234 707 640 8137</span></div></li>
+								<li><div class="contact_text"><h6>Location</h6><span>Nigeria &mdash; Remote OK</span></div></li>
+								<li><div class="contact_text"><h6>Portfolio</h6><span>HireNova &amp; More</span></div></li>
+							</ul>
+							<div class="socal_media_2">
+								<ul>
+									<li><a href="#" aria-label="GitHub"><i class="fa fa-github"></i></a></li>
+									<li><a href="#" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
-
-					<div class="filter-list">
-						<div class="portfolio-items">
-							<div class="row">
-
-								<!-- Project 1 -->
-								<div class="column mix mix_all react fullstack mb_30 col-md-4 col-lg-4">
-									<div class="default-portfolio-item">
-										<a href="images/porfolio/project1.jpg" data-fancybox="gallery">
-											<img src="images/porfolio/project1.jpg" alt="HireNova Job Portal" />
-											<div class="overlay-box">
-												<span><i class="fa fa-eye"></i></span>
-												<div class="tag">
-													<ul>
-														<li>HireNova Job Portal</li>
-														<li>React • API • UI</li>
-													</ul>
-												</div>
-											</div>
-										</a>
+					<div class="col-md-8 col-12 wow animated fadeInRight">
+						<div class="contact_message">
+							<form id="contact-form" class="form">
+								<div class="row">
+									<div class="col-md-6 col-12">
+										<input class="form-control" type="text" name="name" placeholder="Your Name" required>
+									</div>
+									<div class="col-md-6 col-12">
+										<input class="form-control" type="email" name="email" placeholder="Email Address" required>
+									</div>
+									<div class="col-12">
+										<input class="form-control" type="text" name="subject" placeholder="Project Subject">
+									</div>
+									<div class="col-12">
+										<textarea class="form-control" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+									</div>
+									<div class="col-12">
+										<button class="btn btn-default" type="submit">Send Message</button>
+									</div>
+									<div class="col-12 mt-3">
+										<div id="success">✓ Message sent! I'll get back to you soon.</div>
+										<div id="error">✗ Something went wrong. Please try again.</div>
 									</div>
 								</div>
-
-								<!-- Project 2 -->
-								<div class="column mix mix_all react ui mb_30 col-md-4 col-lg-4">
-									<div class="default-portfolio-item">
-										<a href="images/porfolio/project2.jpg" data-fancybox="gallery">
-											<img src="images/porfolio/project2.jpg" alt="Dashboard UI" />
-											<div class="overlay-box">
-												<span><i class="fa fa-eye"></i></span>
-												<div class="tag">
-													<ul>
-														<li>Admin Dashboard</li>
-														<li>React • Chakra UI</li>
-													</ul>
-												</div>
-											</div>
-										</a>
-									</div>
-								</div>
-
-								<!-- Project 3 -->
-								<div class="column mix mix_all ui mb_30 col-md-4 col-lg-4">
-									<div class="default-portfolio-item">
-										<a href="images/porfolio/project3.jpg" data-fancybox="gallery">
-											<img src="images/porfolio/project3.jpg" alt="Landing Page UI" />
-											<div class="overlay-box">
-												<span><i class="fa fa-eye"></i></span>
-												<div class="tag">
-													<ul>
-														<li>Modern Landing Page</li>
-														<li>Responsive Design</li>
-													</ul>
-												</div>
-											</div>
-										</a>
-									</div>
-								</div>
-
-								<!-- Project 4 -->
-								<div class="column mix mix_all fullstack mb_30 col-md-4 col-lg-4">
-									<div class="default-portfolio-item">
-										<a href="images/porfolio/project4.jpg" data-fancybox="gallery">
-											<img src="images/porfolio/project4.jpg" alt="Job Listing App" />
-											<div class="overlay-box">
-												<span><i class="fa fa-eye"></i></span>
-												<div class="tag">
-													<ul>
-														<li>Job Listing App</li>
-														<li>API Integration</li>
-													</ul>
-												</div>
-											</div>
-										</a>
-									</div>
-								</div>
-
-								<!-- Project 5 -->
-								<div class="column mix mix_all react ui mb_30 col-md-4 col-lg-4">
-									<div class="default-portfolio-item">
-										<a href="images/porfolio/project5.jpg" data-fancybox="gallery">
-											<img src="images/porfolio/project5.jpg" alt="Profile Page UI" />
-											<div class="overlay-box">
-												<span><i class="fa fa-eye"></i></span>
-												<div class="tag">
-													<ul>
-														<li>User Profile Page</li>
-														<li>React UI</li>
-													</ul>
-												</div>
-											</div>
-										</a>
-									</div>
-								</div>
-
-								<!-- Project 6 -->
-								<div class="column mix mix_all ui mb_30 col-md-4 col-lg-4">
-									<div class="default-portfolio-item">
-										<a href="images/porfolio/project6.jpg" data-fancybox="gallery">
-											<img src="images/porfolio/project6.jpg" alt="Mobile Responsive UI" />
-											<div class="overlay-box">
-												<span><i class="fa fa-eye"></i></span>
-												<div class="tag">
-													<ul>
-														<li>Mobile UI Design</li>
-														<li>Responsive Layout</li>
-													</ul>
-												</div>
-											</div>
-										</a>
-									</div>
-								</div>
-
-							</div>
-						</div>
-					</div>		
-
-		        </div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--	End Portfolio
-===================================================-->
-<!--	Start Contact
-===================================================-->
-<section id="contact" class="py_80 full_row bg_white">
-	<div class="container">
-		<div class="row">
-
-			<div class="col-md-12 col-lg-12">
-				<div class="section_title_1 text-center mx-auto pb_60 wow animated slideInUp">
-					<h2 class="title text-uppercase">
-						<span class="line_double mx-auto color_default">contact</span>
-						Let’s Work Together
-					</h2>
-					<span class="sub_title">
-						Have a project in mind or need a frontend developer? 
-						Send me a message and I’ll get back to you as soon as possible.
-					</span>
-				</div>
-			</div>
-
-			<div class="col-md-12 col-lg-12">
-				<div class="row">
-
-					<!-- Contact Info -->
-					<div class="col-md-4 col-lg-4">
-						<div class="contact_info wow animated fadeInLeft">
-							<ul>
-								<li>
-									<div class="contact_text">
-										<h6 class="font-weight-bold color_primary">Email</h6>
-										<span class="color_secondery">thankgodanigbo@gmail.com</span>
-									</div>
-								</li>
-								<li>
-									<div class="contact_text">
-										<h6 class="font-weight-bold color_primary">Phone</h6>
-										<span class="color_secondery">+234 707 640 8137</span>
-									</div>
-								</li>
-								<li>
-									<div class="contact_text">
-										<h6 class="font-weight-bold color_primary">Location</h6>
-										<span class="color_secondery">Nigeria (Available for remote work)</span>
-									</div>
-								</li>
-								<li>
-									<div class="contact_text">
-										<h6 class="font-weight-bold color_primary">Portfolio</h6>
-										<span class="color_secondery">HireNova Project & More</span>
-									</div>
-								</li>
-							</ul>
-						</div>
-
-						<!-- Social Links -->
-						<div class="socal_media_2 mt_15 d-inline-block">
-							<ul>
-								<li><a href="#"><i class="fa fa-github"></i></a></li>
-								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-							</ul>
+							</form>
 						</div>
 					</div>
-
-					<!-- Contact Form -->
-					<div class="col-md-8 col-lg-8">
-						<form id="contact-form" class="form contact_message wow animated fadeInRight">
-
-							<div class="row">
-
-								<div class="col-md-6 col-lg-6">
-									<div class="form-group">
-										<input class="form-control" type="text" name="name" placeholder="Your Name" required />
-									</div>
-								</div>
-
-								<div class="col-md-6 col-lg-6">
-									<div class="form-group">
-										<input class="form-control" type="email" name="email" placeholder="Email Address" required />
-									</div>
-								</div>
-
-								<div class="col-md-12 col-lg-12">
-									<div class="form-group">
-										<input class="form-control" type="text" name="subject" placeholder="Project Subject" />
-									</div>
-								</div>
-
-								<div class="col-md-12 col-lg-12">
-									<div class="form-group">
-										<textarea class="form-control" name="message" rows="7" placeholder="Tell me about your project..." required></textarea>
-									</div>							
-								</div>
-
-								<div class="col-md-12 col-lg-12">
-									<div class="form-group">
-										<input class="btn btn-default" type="submit" value="Send Message" />
-									</div>
-								</div>
-
-								<div class="col-md-12 col-lg-12">
-									<div class="error-handel">
-										<div id="success">Message sent successfully. I’ll get back to you soon.</div>
-										<div id="error">Something went wrong. Please try again later.</div>
-									</div>
-								</div>
-
-							</div>
-
-						</form>
-					</div>
-
 				</div>
 			</div>
+		</section>
 
-		</div>
-	</div>
-</section>
-<!--	End Contact
-===================================================-->
-	<!--	Start Footer
-	===================================================-->
-	<footer class="p_20 color_primary bg_secondery text-center full_row">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-lg-12">
-					<div class="copyright"><p>© 2026 ThankGod Portfolio</p></div>
-				</div>
+		<!-- FOOTER -->
+		<footer class="text-center bg_secondery">
+			<div class="container">
+				<p class="copyright">© 2026 <span class="color_default">ThankGod Anigbo</span> — Frontend Developer</p>
 			</div>
-		</div>
-	</footer>
-	<!--	End Footer
-	===================================================-->
-	</div>
-</div>
-<!--	Wrapper End
-=======================================================-->
-	<!--	Js Links
-	===================================================-->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="js/custom.js"></script>
+		</footer>
+
+	</div><!-- end #page_wrapper -->
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script defer src="js/popper.min.js"></script>
+	<script defer src="js/bootstrap.min.js"></script>
+	<script defer src="js/plugins.js"></script>
+	<script defer src="js/custom.js"></script>
+
 	<script>
-		$(document).ready(function() {
-		//=========================================
-		//  Water Effect
-		//=========================================
-		
-			$('.banner_water_effect').ripples({
-			  resolution: 256,
-			  dropRadius: 20,
-			  perturbance: 0.03,
-			  interactive:true,
-			});
-		//  Smoothscroll js
-		//=========================================
-		  $("a").on('click', function(event) {
+	/* ============================================
+	   TYPEWRITER — pure JS, zero plugin dependency
+	   ============================================ */
+	(function () {
+		var words = ['Web Developer.', 'React Developer.', 'Freelancer.', 'UI Builder.'];
+		var el    = document.getElementById('typewriter');
+		var wi    = 0, ci = 0, deleting = false;
+		var SPEED_TYPE = 80, SPEED_DEL = 40, PAUSE = 1800;
 
-			  if (this.hash !== "") {
-				event.preventDefault();
-			  
-				var hash = this.hash;
+		function tick() {
+			var word    = words[wi];
+			var current = deleting ? word.slice(0, ci--) : word.slice(0, ci++);
+			el.textContent = current;
 
-				$('html, body').animate({
-				  scrollTop: $(hash).offset().top 
-				}, 1000, function(){
-			 
-				  window.location.hash = hash;
-				});
-			  }
+			var delay = deleting ? SPEED_DEL : SPEED_TYPE;
+			if (!deleting && ci > word.length)       { delay = PAUSE; deleting = true; }
+			else if (deleting && ci < 0)             { deleting = false; wi = (wi + 1) % words.length; ci = 0; delay = 300; }
+			setTimeout(tick, delay);
+		}
+		setTimeout(tick, 800);
+	}());
+
+	/* ============================================
+	   HERO ENTRANCE ANIMATIONS
+	   ============================================ */
+	document.addEventListener('DOMContentLoaded', function () {
+
+		// Staggered fade-up for hero elements
+		var heroEls = document.querySelectorAll('[data-anim]');
+		heroEls.forEach(function (el) {
+			el.style.opacity    = '0';
+			el.style.transform  = el.dataset.anim === 'fade-left' ? 'translateX(40px)' : 'translateY(30px)';
+			el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+			var delay = parseInt(el.dataset.delay) || 0;
+			setTimeout(function () {
+				el.style.opacity   = '1';
+				el.style.transform = 'none';
+			}, 400 + delay);
+		});
+
+		// Generate hero particles
+		var container = document.getElementById('heroParticles');
+		if (container) {
+			for (var i = 0; i < 28; i++) {
+				var dot = document.createElement('span');
+				dot.style.cssText = [
+					'position:absolute',
+					'width:' + (Math.random() * 4 + 2) + 'px',
+					'height:' + (Math.random() * 4 + 2) + 'px',
+					'background:rgba(56,189,248,' + (Math.random() * 0.5 + 0.1) + ')',
+					'border-radius:50%',
+					'top:'  + Math.random() * 100 + '%',
+					'left:' + Math.random() * 100 + '%',
+					'animation: floatDot ' + (Math.random() * 6 + 4) + 's ease-in-out ' + Math.random() * 3 + 's infinite alternate'
+				].join(';');
+				container.appendChild(dot);
+			}
+		}
+
+		// Smooth scroll with navbar offset
+		document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+			a.addEventListener('click', function (e) {
+				var target = document.querySelector(this.getAttribute('href'));
+				if (target) {
+					e.preventDefault();
+					window.scrollTo({ top: target.offsetTop - 70, behavior: 'smooth' });
+				}
 			});
-		 });
+		});
+
+		// Scroll-to-top button
+		var scrollBtn = document.getElementById('scroll-top');
+		window.addEventListener('scroll', function () {
+			scrollBtn.classList.toggle('visible', window.scrollY > 400);
+		});
+
+		// Navbar scroll class
+		var navbar = document.querySelector('.main_nav');
+		window.addEventListener('scroll', function () {
+			navbar.classList.toggle('scrolled', window.scrollY > 60);
+		});
+	});
+
+	// Hide loader
+	window.addEventListener('load', function () {
+		document.body.classList.add('loaded');
+	});
 	</script>
+
+	<!-- EmailJS contact form -->
 	<script>
-document.addEventListener("DOMContentLoaded", function () {
+	document.addEventListener('DOMContentLoaded', function () {
+		emailjs.init('cIDTQAAfkOSliDLAI');
+		document.getElementById('contact-form').addEventListener('submit', function (e) {
+			e.preventDefault();
+			emailjs.sendForm('service_8kp9vl5', 'template_t3xwsx8', this).then(
+				function () {
+					document.getElementById('success').style.display = 'block';
+					document.getElementById('error').style.display   = 'none';
+					document.getElementById('contact-form').reset();
+				},
+				function (err) {
+					document.getElementById('error').style.display   = 'block';
+					document.getElementById('success').style.display = 'none';
+					console.error(err);
+				}
+			);
+		});
+	});
+	</script>
 
-  emailjs.init("cIDTQAAfkOSliDLAI");
-
-  document.getElementById("contact-form").addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    emailjs.sendForm(
-      "service_8kp9vl5",
-      "template_t3xwsx8",
-      this
-    ).then(function (response) {
-
-      document.getElementById("success").style.display = "block";
-      document.getElementById("error").style.display = "none";
-
-      document.getElementById("contact-form").reset();
-
-    }, function (error) {
-
-      document.getElementById("error").style.display = "block";
-      document.getElementById("success").style.display = "none";
-
-      console.log("FAILED...", error);
-    });
-  });
-
-});
-</script>
 </body>
-
-<!-- index-754:31-->
 </html>
